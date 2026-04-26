@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "AFUpk0Oq7wWt8QlJs",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <section class="SC1">
+      <h3>Get in Touch</h3>
+      <p>
+        We'd love to hear from you. Whether you have a question about a rare<br />
+        edition, need reading recommendations, or simply want to say hello,
+        our<br />
+        booksellers are here.
+      </p>
+    </section>
+    <main>
+      <!--end section one -->
+      <section class="SC2">
+        <p>Send a Message</p>
+        <form class="Form">
+          <label for="name">NAME</label>
+          <input type="text" placeholder="Your full name" id="name" />
+          <span class="Error_name"></span><br />
+          <label for="email">EMAIL</label>
+          <input type="email" placeholder="Your email address" id="email" />
+          <span class="Error_email"></span><br />
+          <label for="subject">SUBJECT</label>
+          <input
+            type="text"
+            placeholder="What is this regarding ?"
+            id="subject"
+            name="subject"
+          />
+          <span class="Error_subject"></span><br />
+          <label for="message">MESSAGE</label>
+          <textarea
+            id="message"
+            placeholder="write your message"
+            maxlength="300"
+            minlength="10"
+          ></textarea>
+          <span class="Error_message"></span><br />
+        </form>
+        <button class="subnitC">
+          submit <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </section>
+      <!--end section two -->
+      <section class="SC3">
+        <h5>More Of Us</h5>
+        <p>
+          We are everywhere, Get Closer to us by following our socials or just
+          give us a call :)
+        </p>
+        <div class="phaE">
+          <p>HOTLINE</p>
+          <p>
+            <a href="#"> +20 1017778837 </a>
+          </p>
+          <p>EMAIL</p>
+          <p>
+            <a href="#"> hello@gmail.com </a>
+          </p>
+          <p>SOCIALS</p>
+          <div class="Socials">
+            <!-- 3 links -->
+            <a href="#">
+              <!-- <p>facebook</p> -->
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <!-- <p>whatsApp</p> -->
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <!-- <p>instagram</p> -->
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--end section three -->
+    </main>
+    <!--end main-->
+    <script src="script.js"></script>
+  </body>
+</html>
